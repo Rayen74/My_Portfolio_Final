@@ -1,6 +1,5 @@
 import React from 'react';
 import { MapPin, Briefcase, Award, Download, Github, Linkedin, ArrowDown, Sparkles } from 'lucide-react';
-import { downloadCV } from '../utils/downloadCv';
 
 interface HeroProps {
   onOpenChat: () => void;
@@ -66,8 +65,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenChat }) => {
             </button>
 
             <a
-              href="/api/download-cv"
-              onClick={downloadCV}
+              href="/assets/aistudio/CHAABEN_RayenAlternance__1__dc58041d.pdf"
               download="Rayen_Chaaben_CV.pdf"
               className="px-5 py-3 text-sm font-semibold text-white bg-white/5 border border-white/10 rounded-xl hover:bg-white/10 hover:border-white/20 transition-all flex items-center gap-2 cursor-pointer"
               title="Download Rayen Chaaben CV (PDF)"

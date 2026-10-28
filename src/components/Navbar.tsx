@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X, Sparkles, Download, ArrowUpRight } from 'lucide-react';
-import { downloadCV } from '../utils/downloadCv';
 
 interface NavbarProps {
   onOpenChat: () => void;
@@ -112,8 +111,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenChat, activeSection }) => 
           </button>
 
           <a
-            href="/api/download-cv"
-            onClick={downloadCV}
+            href="/assets/aistudio/CHAABEN_RayenAlternance__1__dc58041d.pdf"
             download="Rayen_Chaaben_CV.pdf"
             className="hidden lg:inline-flex items-center gap-1.5 px-3.5 py-1.5 text-xs font-medium rounded-lg text-white bg-gradient-to-r from-cyan-500 to-purple-600 hover:shadow-[0_0_16px_rgba(0,255,255,0.3)] transition-all cursor-pointer"
             title="Download Rayen Chaaben CV (PDF)"
@@ -158,8 +156,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenChat, activeSection }) => 
               <span>Ask AI Companion</span>
             </button>
             <a
-              href="/api/download-cv"
-              onClick={downloadCV}
+              href="/assets/aistudio/CHAABEN_RayenAlternance__1__dc58041d.pdf"
               download="Rayen_Chaaben_CV.pdf"
               className="w-full py-2.5 px-3 text-xs font-bold text-center text-white bg-gradient-to-r from-cyan-500 to-purple-600 rounded-lg flex items-center justify-center gap-2 cursor-pointer"
             >

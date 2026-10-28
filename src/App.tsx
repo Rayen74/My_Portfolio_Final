@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
-import MediaMarquee from './components/MediaMarquee';
+
 import About from './components/About';
 import Services from './components/Services';
 import Projects from './components/Projects';
@@ -9,12 +9,13 @@ import Skills from './components/Skills';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import ParticleBackground from './components/ParticleBackground';
-import AIAssistant3D from './components/AIAssistant3D';
+import AIAssistant3D, { AssistantState } from './components/AIAssistant3D';
 import AIAssistantChat from './components/AIAssistantChat';
 
 export default function App() {
   const [activeSection, setActiveSection] = useState('home');
   const [isChatOpen, setIsChatOpen] = useState(false);
+  const [assistantState, setAssistantState] = useState<AssistantState>('idle');
 
   useEffect(() => {
     const sectionIds = ['home', 'about', 'services', 'projects', 'skills', 'contact'];
@@ -54,7 +55,12 @@ export default function App() {
       {/* 2. Cinematic 3D AI Assistant (Three.js WebGL Layer) */}
       <AIAssistant3D
         activeSection={activeSection}
-        onOpenChat={() => setIsChatOpen(true)}
+        isChatOpen={isChatOpen}
+        assistantState={assistantState}
+        onOpenChat={() => {
+          setIsChatOpen(true);
+          setAssistantState('opened');
+        }}
       />
 
       {/* 3. Navigation Bar */}
@@ -66,9 +72,6 @@ export default function App() {
       {/* 4. Page Sections */}
       <main className="relative z-10">
         <Hero onOpenChat={() => setIsChatOpen(true)} />
-
-        {/* 5. Two-Row Horizontal Scrolling Media Marquee */}
-        <MediaMarquee />
 
         {/* 6. About Me */}
         <About />
@@ -92,7 +95,12 @@ export default function App() {
       {/* 12. Conversational AI Assistant Modal */}
       <AIAssistantChat
         isOpen={isChatOpen}
-        onClose={() => setIsChatOpen(false)}
+        assistantState={assistantState}
+        onStateChange={setAssistantState}
+        onClose={() => {
+          setIsChatOpen(false);
+          setAssistantState('idle');
+        }}
       />
     </div>
   );

@@ -8,7 +8,7 @@ export async function downloadCV(e?: React.MouseEvent) {
     e.preventDefault();
   }
 
-  const cvUrl = '/api/download-cv';
+  const cvUrl = '/assets/aistudio/CHAABEN_RayenAlternance__1__dc58041d.pdf';
   const fallbackUrl = '/assets/aistudio/CHAABEN_RayenAlternance__1__dc58041d.pdf';
 
   try {

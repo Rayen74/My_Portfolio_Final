@@ -1,0 +1,27 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+  functions = "netlify/functions"
+
+[build.environment]
+  NODE_VERSION = "22"
+
+[[redirects]]
+  from = "/CV.pdf"
+  to = "/assets/aistudio/CHAABEN_RayenAlternance__1__dc58041d.pdf"
+  status = 200
+
+[[redirects]]
+  from = "/Rayen_Chaaben_CV.pdf"
+  to = "/assets/aistudio/CHAABEN_RayenAlternance__1__dc58041d.pdf"
+  status = 200
+
+[[redirects]]
+  from = "/api/download-cv"
+  to = "/assets/aistudio/CHAABEN_RayenAlternance__1__dc58041d.pdf"
+  status = 200
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200

@@ -88,7 +88,16 @@ app.post('/api/chat', async (req, res) => {
       : '';
     const retrievedFacts = retrieveKnowledge(qClean, historyText);
 
-    const apiKey = process.env.OLLAMA_API_KEY || '8b8082835d9b48ce8962ce5718ae162e.7LDa15tRQ-5cbDgdFCL7W0sX';
+    const apiKey = process.env.OLLAMA_API_KEY;
+    if (!apiKey) {
+      console.error('OLLAMA_API_KEY environment variable is not configured.');
+      return res.status(500).json({
+        error: 'OLLAMA_API_KEY is not configured on server',
+        reply: "Rayen Chaaben is an AI Full-Stack Developer currently studying at ISIMS Sfax and seeking an Alternance position. Feel free to explore his projects and certifications below or reach out directly at rayenchaaben0704@gmail.com.",
+        actionUrl: "#projects",
+        actionText: "View Featured Projects"
+      });
+    }
 
     // Build specialized system prompt with retrieved ground-truth knowledge
     const systemPrompt = `You are AETHER-01, the dedicated AI Portfolio Companion representing Rayen Chaaben.

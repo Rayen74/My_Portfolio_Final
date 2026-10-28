@@ -21,19 +21,10 @@ export const REAL_PROJECTS: ProjectData[] = [
     description: 'A robust Jira-inspired collaborative tool for enterprise task management, featuring real-time interactive Kanban boards, sprint telemetry, time tracking, and customizable KPI analytics dashboards.',
     technologies: ['React', 'Node.js', 'Express', 'Prisma', 'PostgreSQL', 'Tailwind CSS', 'TanStack Query'],
     githubUrl: 'https://github.com/Rayen74',
-    slot1: {
-      type: 'image',
-      src: '/assets/Yajoura_AI.png',
-      alt: 'Yajoura Kanban Dashboard and Sprint Interface',
-      caption: 'Interactive Kanban & Sprint Board'
-    },
-    slot2: {
-      type: 'video',
-      src: '/assets/Yaj.webm',
-      poster: '/assets/Yajoura_AI.png',
-      alt: 'Yajoura Platform Live Video Demo',
-      caption: 'Live Platform Video Walkthrough'
-    }
+    coverImage: '/assets/Yajoura_AI.png',
+    videoUrl: '/assets/Yaj.webm',
+    videoPoster: '/assets/Yajoura_AI.png',
+    caption: 'Interactive Kanban Dashboard & Sprint Management'
   },
   {
     id: 'oliverar',
@@ -43,18 +34,8 @@ export const REAL_PROJECTS: ProjectData[] = [
     description: 'An enterprise full-stack platform engineered with Agile Scrum methodologies, uniting an Angular UI with a layered Spring Boot and MongoDB architecture to coordinate orchard scheduling, workforce assignment, yield telemetry, and automated operational notifications via n8n.',
     technologies: ['Spring Boot', 'Angular', 'MongoDB', 'n8n', 'Scrum', 'GitHub'],
     githubUrl: 'https://github.com/Rayen74',
-    slot1: {
-      type: 'image',
-      src: '/assets/OliveRAR.png',
-      alt: 'OliveRAR Orchard Logistics & Management Interface',
-      caption: 'Orchard Logistics & Yield Telemetry'
-    },
-    slot2: {
-      type: 'image',
-      src: '/assets/OliveRAR_Harvest.jpg',
-      alt: 'OliveRAR Harvest Operations & Automated Crew Scheduling',
-      caption: 'Harvest Operations & Crew Scheduling'
-    }
+    coverImage: '/assets/OliveRAR.png',
+    caption: 'Orchard Logistics & Yield Telemetry'
   },
   {
     id: 'registration-agent',
@@ -62,21 +43,11 @@ export const REAL_PROJECTS: ProjectData[] = [
     category: 'AI WORKFLOW AUTOMATION',
     award: '🏆 3rd Place · CS SYP HIZE Hackathon',
     title: 'Candidate Registration Automation Agent',
-    description: 'An end-to-end autonomous event logistics agent constructed in under 24 hours. Processes candidate submissions, eliminates duplicate entries, dynamically generates cryptographic QR credentials, and dispatches customized confirmation receipts with zero human intervention.',
-    technologies: ['n8n', 'JavaScript', 'Google Sheets API', 'Gmail API', 'QR Generation'],
+    description: '**Candidate Registration Automation Agent** — Hackathon Project (24h) — CS SYP HIZE, 3rd Place Apr 2026. Built an end-to-end automation pipeline in 24 hours that processes candidate registrations, deduplicates entries, generates personalized QR codes, and sends confirmation emails with zero manual intervention — placing 3rd among 10 teams at CS SYP HIZE.',
+    technologies: ['n8n', 'Google Sheets API', 'Gmail API', 'QR Generation'],
     githubUrl: 'https://github.com/Rayen74',
-    slot1: {
-      type: 'image',
-      src: '/assets/RegistrationAgent.png',
-      alt: 'Candidate Registration n8n Automated Workflow Pipeline',
-      caption: 'n8n Autonomous Workflow Pipeline'
-    },
-    slot2: {
-      type: 'image',
-      src: '/assets/Registration_QR.jpg',
-      alt: 'Cryptographic QR Credential Generation & Attendee Dispatch',
-      caption: 'Autonomous QR Credentials & Dispatch'
-    }
+    coverImage: '/assets/RegistrationAgent.png',
+    caption: 'Autonomous Event Registration & QR Generation Workflow'
   },
   {
     id: 'arsii',
@@ -87,40 +58,19 @@ export const REAL_PROJECTS: ProjectData[] = [
     description: 'A high-performance mobile MVP built in 24 hours during the AI Night Challenge hackathon. Backed by an Express.js and PostgreSQL REST API with Prisma ORM, enabling rapid sprint planning, task assignments, and instant team collaboration on iOS and Android.',
     technologies: ['React Native', 'TailwindCSS', 'Node.js', 'Express.js', 'PostgreSQL', 'Prisma ORM'],
     githubUrl: 'https://github.com/Rayen74',
-    slot1: {
-      type: 'image',
-      src: '/assets/ARSII.png',
-      alt: 'ARSII Mobile Application Runtime & Navigation',
-      caption: 'Mobile App Interface & Team Hub'
-    },
-    slot2: {
-      type: 'image',
-      src: '/assets/ARSII_Mobile_Task.jpg',
-      alt: 'ARSII Mobile Sprint Board & Task Collaboration UI',
-      caption: 'Sprint Task Board & Team Collaboration'
-    }
+    coverImage: '/assets/ARSII.png',
+    caption: 'Cross-Platform Mobile Sprint Board & Task Hub'
   },
   {
     id: 'jci-sakiet-ezzit',
     number: '05',
-    category: 'DYNAMIC COMMUNITY WEB PLATFORM',
+    category: 'COMMUNITY WEB PLATFORM',
     title: 'JCI Sakiet Ezzit Web Platform',
     description: 'A modern, highly responsive web presence built for JCI Sakiet Ezzit. Highlights civic initiatives, leadership programs, and community summits with fluid micro-interactions and seamless mobile ergonomics.',
-    technologies: ['React', 'Tailwind CSS', 'Node.js', 'Responsive Design'],
+    technologies: ['React', 'Tailwind CSS', 'Responsive Design', 'Netlify'],
     githubUrl: 'https://github.com/Rayen74',
-    slot1: {
-      type: 'image',
-      src: '/assets/JCI.png',
-      alt: 'JCI Sakiet Ezzit Civic Initiatives & Web Platform',
-      caption: 'Civic Initiatives & Member Registration'
-    },
-    slot2: {
-      type: 'video',
-      src: '/assets/JCI.webm',
-      poster: '/assets/JCI_AI.png',
-      alt: 'JCI Sakiet Ezzit Production Website Video Demo',
-      caption: 'Live Production Website Video Demo'
-    }
+    liveUrl: 'https://jci-sakiet-ezzit-website.netlify.app',
+    hasNoMedia: true
   },
   {
     id: 'cancer-classification',
@@ -130,83 +80,32 @@ export const REAL_PROJECTS: ProjectData[] = [
     description: 'A Python desktop scientific GUI application for ingesting clinical CSV datasets, performing Principal Component Analysis (PCA) dimension reduction, and executing K-Means and Hierarchical Clustering with real-time interactive scatter plots.',
     technologies: ['Python', 'Scikit-learn', 'Pandas', 'NumPy', 'Matplotlib'],
     githubUrl: 'https://github.com/Rayen74',
-    slot1: {
-      type: 'image',
-      src: '/assets/Cancer.png',
-      alt: 'Clinical Dataset GUI & Clustering Scatter Plot',
-      caption: 'Clinical Dataset GUI & Clustering Plots'
-    },
-    slot2: {
-      type: 'image',
-      src: '/assets/projects/CancerClassification/ProjetAFD_Final_(1)-01.png',
-      alt: 'PCA Dimension Reduction & Variance Correlation Matrix',
-      caption: 'PCA Variance & Correlation Matrix'
-    },
-    galleryImages: cancerGallery
+    coverImage: '/assets/Cancer.png',
+    galleryImages: cancerGallery,
+    caption: 'Clinical Dataset GUI & Clustering Scatter Plot'
   },
   {
     id: 'fake-news',
     number: '07',
-    category: 'NATURAL LANGUAGE PROCESSING & CLASSIFICATION',
+    category: 'MACHINE LEARNING & CLASSIFICATION',
     title: 'Fake News Categorisation System',
     description: 'An automated machine learning text classification system distinguishing factual news from disinformation using NLP preprocessing, TF-IDF vectorization matrices, and extensive benchmark comparisons across multiple supervised classifiers.',
-    technologies: ['Python', 'TF-IDF', 'Scikit-learn', 'NLP', 'Pandas'],
+    technologies: ['Python', 'TF-IDF', 'Scikit-learn', 'Pandas'],
     githubUrl: 'https://github.com/Rayen74',
-    slot1: {
-      type: 'image',
-      src: '/assets/FakeNews.png',
-      alt: 'Fake News NLP Preprocessing & Verification Interface',
-      caption: 'NLP Verification Dashboard'
-    },
-    slot2: {
-      type: 'image',
-      src: '/assets/projects/FakeNewsCategory/fake_news_categorisation (2)-01.png',
-      alt: 'TF-IDF Vector Pipeline & Classifier Comparison Matrix',
-      caption: 'TF-IDF Pipeline & Model Comparison'
-    },
-    galleryImages: fakeNewsGallery
+    coverImage: '/assets/FakeNews.png',
+    galleryImages: fakeNewsGallery,
+    caption: 'Fake News Preprocessing & Model Evaluation Matrix'
   },
   {
     id: 'tech-news-agent',
     number: '08',
-    category: 'AUTOMATED WEB SCRAPING & NLP',
-    title: 'Tech News Extraction Agent',
-    description: 'A scheduled autonomous crawler developed during a summer software internship. Aggregates breaking technology dispatches across global publications, executes topical keyword filtering, and produces clean daily executive summaries.',
-    technologies: ['Python', 'Web Scraping', 'NLP', 'BeautifulSoup', 'Automation'],
+    category: 'AI AGENT & EDITORIAL PIPELINE',
+    title: 'Tech News AI',
+    description: '**Tech News AI** — An evidence-first AI editorial pipeline that automatically discovers and deduplicates technology news, uses a ReAct agent to investigate and verify technical claims through web search, and applies deterministic scoring to produce reliable editorial recommendations.',
+    technologies: ['Python', 'Web Scraping', 'ReAct Agent', 'Web Search', 'BeautifulSoup', 'Automation'],
     githubUrl: 'https://github.com/Rayen74',
-    slot1: {
-      type: 'image',
-      src: '/assets/TechNewsAgent.png',
-      alt: 'Automated Tech News Web Scraper Pipeline',
-      caption: 'Automated Scraping & Topic Pipeline'
-    },
-    slot2: {
-      type: 'image',
-      src: '/assets/TechNews_Digest.jpg',
-      alt: 'Daily Executive Digest & Topical Tagging View',
-      caption: 'Daily Executive Digest & Tagging View'
-    }
-  },
-  {
-    id: 'ticket-price',
-    number: '09',
-    category: 'PREDICTIVE MODELING & REGRESSION',
-    title: 'Ticket Price Predictive Analytics',
-    description: 'A multivariate regression modeling project analyzing demand fluctuations, seasonal trends, and booking intervals to forecast ticket price trajectories with minimal residual error.',
-    technologies: ['Python', 'Machine Learning', 'Scikit-Learn', 'Pandas', 'Matplotlib'],
-    githubUrl: 'https://github.com/Rayen74',
-    slot1: {
-      type: 'image',
-      src: '/assets/TicketPrice.jpg',
-      alt: 'Demand Forecasting & Ticket Price Regression Curve',
-      caption: 'Demand Trends & Regression Curves'
-    },
-    slot2: {
-      type: 'image',
-      src: '/assets/TicketPrice_Metrics.jpg',
-      alt: 'Multivariate Price Model & Residual Error Distribution',
-      caption: 'Multivariate Regression & Residual Distribution'
-    }
+    coverImage: '/assets/TechNewsAgent.png',
+    caption: 'Evidence-First AI Editorial Pipeline & Verification'
   }
 ];
 
@@ -229,10 +128,10 @@ export const Projects: React.FC = () => {
 
       const matchesCat =
         cat === 'all' ||
-        (cat === 'fullstack' && (p.category.includes('FULL-STACK') || p.category.includes('WEB'))) ||
+        (cat === 'fullstack' && (p.category.includes('FULL-STACK') || p.category.includes('WEB') || p.category.includes('COMMUNITY'))) ||
         (cat === 'mobile' && p.category.includes('MOBILE')) ||
-        (cat === 'automation' && p.category.includes('AUTOMATION')) ||
-        (cat === 'ml' && (p.category.includes('MACHINE LEARNING') || p.category.includes('NATURAL LANGUAGE')));
+        (cat === 'automation' && (p.category.includes('AUTOMATION') || p.category.includes('EDITORIAL'))) ||
+        (cat === 'ml' && (p.category.includes('MACHINE LEARNING') || p.category.includes('CLASSIFICATION')));
 
       const matchesSearch =
         !q ||

@@ -70,11 +70,12 @@ Coursework & foundations: Data Structures & Algorithms, Software Architecture, D
     id: 'certifications',
     category: 'certification',
     title: 'Certifications & Credentials',
-    keywords: ['certification', 'certifications', 'datacamp', 'n8n', 'agentic ai', 'devmastery', 'credentials', 'courses'],
+    keywords: ['certification', 'certifications', 'n8n', 'academy', 'machine learning', 'stanford', 'react native', 'meta', 'credentials'],
     content: `Verified Certifications:
-1. Intermediate Workflow Automation with n8n — DataCamp (Advanced node chaining, error handling, webhooks, multi-step integrations).
-2. Introduction to Workflow Automation with n8n — DataCamp (Foundational workflow triggers, data transformations, API nodes).
-3. Agentic AI — DevMastery School (Autonomous agents, reasoning loops, tool-calling, LLM prompt engineering).`
+1. n8n Automation — Intermediate Level (n8n Academy) — Advanced workflow architecture, complex sub-workflows, webhooks, error handling, and API integrations.
+2. n8n Automation — Introduction Level (n8n Academy) — Foundational automation nodes, data manipulation, triggers, and automated notification pipelines.
+3. Machine Learning Specialization (Stanford Online & DeepLearning.AI) — Supervised learning, deep neural networks, unsupervised learning, recommender systems, and reinforcement learning.
+4. React Native Mobile Development (Meta & Coursera) — Cross-platform mobile architecture, React Native navigation, native components, and performant state management.`
   },
   {
     id: 'languages-volunteering',
@@ -128,15 +129,9 @@ Volunteering & Civic Leadership:
     category: 'project',
     title: 'Candidate Registration Automation Agent (3rd Place Hackathon Winner)',
     keywords: ['registration agent', 'hackathon', 'award', '3rd place', 'cs syp hize', 'n8n', 'qr', 'email', 'sheets', 'automation'],
-    content: `Project 03: Candidate Registration Automation Agent (CS SYP HIZE Hackathon — 🏆 3rd Place Award, Apr 2026)
-- Overview: Autonomous event logistics agent engineered in under 24 hours that won 3rd place among 10 competing teams.
-- Architecture & Pipeline:
-  * Ingests candidate registrations directly from web forms / Google Sheets webhook.
-  * Executes deduplication logic against previous entries (email and ID verification).
-  * Dynamically generates cryptographic QR credentials personalized for each attendee.
-  * Triggers transactional confirmation receipts with embedded QR badges via Gmail API within seconds.
-  * 100% autonomous operation with zero human intervention required.
-- Technologies: n8n workflow automation, JavaScript code nodes, Google Sheets API, Gmail API, QR Generation.
+    content: `Project 03: Candidate Registration Automation Agent — Hackathon Project (24h) — CS SYP HIZE, 3rd Place Apr 2026
+- Overview: Built an end-to-end automation pipeline in 24 hours that processes candidate registrations, deduplicates entries, generates personalized QR codes, and sends confirmation emails with zero manual intervention — placing 3rd among 10 teams at CS SYP HIZE.
+- Technologies: n8n, Google Sheets API, Gmail API, QR Generation.
 - GitHub: https://github.com/Rayen74`
   },
   {
@@ -159,10 +154,12 @@ Volunteering & Civic Leadership:
     category: 'project',
     title: 'JCI Sakiet Ezzit Web Platform',
     keywords: ['jci', 'jci sakiet ezzit', 'volunteer', 'website', 'react', 'tailwind', 'netlify', 'community'],
-    content: `Project 05: JCI Sakiet Ezzit Web Platform (Volunteer Production Platform, Nov 2025)
+    content: `Project 05: JCI Sakiet Ezzit Web Platform (Production Community Platform, Nov 2025)
 - Overview: Designed, developed, and deployed the official production website for JCI Sakiet Ezzit.
 - Purpose: Provides a public portal highlighting civic initiatives, youth leadership summits, and enabling online membership registration.
-- Technologies: React, Tailwind CSS, Netlify, Responsive Web Design.
+- Live Website: https://jci-sakiet-ezzit-website.netlify.app
+- Technologies: React, Tailwind CSS, Responsive Web Design, Netlify (No backend Node.js server; purely static client with Netlify hosting).
+- Media note: Clean text and link presentation; no photos or videos displayed.
 - GitHub: https://github.com/Rayen74`
   },
   {
@@ -184,35 +181,21 @@ Volunteering & Civic Leadership:
     category: 'project',
     title: 'Fake News Categorisation System',
     keywords: ['fake news', 'nlp', 'tf-idf', 'scikit-learn', 'text classification', 'python', 'disinformation'],
-    content: `Project 07: Fake News Categorisation System (Natural Language Processing & Classification)
+    content: `Project 07: Fake News Categorisation System (Machine Learning Text Classification)
 - Overview: Automated machine learning text classification system that distinguishes factual reporting from online disinformation.
-- Pipeline:
-  * NLP preprocessing: tokenization, punctuation removal, stop-word elimination, and stemming/lemmatization.
-  * TF-IDF (Term Frequency-Inverse Document Frequency) vectorization matrices.
-  * Comprehensive model benchmarking across multiple supervised classifiers (Multinomial Naive Bayes, Support Vector Machines, Logistic Regression, Random Forest).
-- Technologies: Python, TF-IDF, Scikit-learn, NLP, Pandas.
+- Pipeline: Preprocessing, TF-IDF (Term Frequency-Inverse Document Frequency) vectorization matrices, and comprehensive model benchmarking across multiple supervised classifiers.
+- Technologies: Python, TF-IDF, Scikit-learn, Pandas.
 - GitHub: https://github.com/Rayen74`
   },
   {
     id: 'project-tech-news-agent',
     category: 'project',
-    title: 'Tech News Extraction Agent',
-    keywords: ['tech news', 'agent', 'scraper', 'crawler', 'internship', 'python', 'beautifulsoup', 'nlp', 'digest'],
-    content: `Project 08: Tech News Extraction Agent (Summer Internship, Jun 2026)
-- Overview: Autonomous web scraping and NLP summarization agent created during a software internship.
-- Operation: Scheduled crawler that aggregates breaking technology news from multiple publications, performs topical filtering and keyword extraction, and produces an executive morning briefing digest without manual curation.
-- Technologies: Python, BeautifulSoup, requests, NLP, Web Scraping.
-- GitHub: https://github.com/Rayen74`
-  },
-  {
-    id: 'project-ticket-price',
-    category: 'project',
-    title: 'Ticket Price Predictive Analytics',
-    keywords: ['ticket price', 'predictive', 'regression', 'xgboost', 'machine learning', 'python', 'pricing', 'residuals'],
-    content: `Project 09: Ticket Price Predictive Analytics (Multivariate Regression & Forecasting)
-- Overview: Machine learning regression project analyzing airline and event booking dynamics to forecast ticket price trajectories.
-- Method: Evaluates feature correlations including days until departure, route distance, day-of-week seasonality, and historical demand indices with residual error distribution analysis.
-- Technologies: Python, Scikit-learn, Pandas, Matplotlib, Regression Modeling.
+    title: 'Tech News AI',
+    keywords: ['tech news', 'agent', 'scraper', 'crawler', 'react agent', 'web search', 'python', 'beautifulsoup', 'digest', 'editorial'],
+    content: `Project 08: Tech News AI — Evidence-First AI Editorial Pipeline
+- Overview: **Tech News AI** — An evidence-first AI editorial pipeline that automatically discovers and deduplicates technology news, uses a ReAct agent to investigate and verify technical claims through web search, and applies deterministic scoring to produce reliable editorial recommendations.
+- Architecture: Automated discovery crawler, ReAct investigative agent executing live web search validation, and deterministic confidence scoring logic.
+- Technologies: Python, Web Scraping, ReAct Agent, Web Search, BeautifulSoup, Automation.
 - GitHub: https://github.com/Rayen74`
   }
 ];
@@ -244,9 +227,8 @@ export function retrieveKnowledge(query: string, historyText: string = ''): stri
     if (item.id === 'project-registration-agent' && /registration|qr|award|hackathon|hize|3rd place/i.test(combinedText)) score += 8;
     if (item.id === 'project-jci' && /jci|sakiet|volunteer/i.test(combinedText)) score += 8;
     if (item.id === 'project-cancer-classification' && /cancer|cluster|k-means|pca/i.test(combinedText)) score += 8;
-    if (item.id === 'project-fake-news' && /fake news|disinformation|nlp|tf-idf/i.test(combinedText)) score += 8;
-    if (item.id === 'project-tech-news-agent' && /tech news|scraper|crawler/i.test(combinedText)) score += 8;
-    if (item.id === 'project-ticket-price' && /ticket|price|regression|predict/i.test(combinedText)) score += 8;
+    if (item.id === 'project-fake-news' && /fake news|disinformation|tf-idf/i.test(combinedText)) score += 8;
+    if (item.id === 'project-tech-news-agent' && /tech news|react agent|scraper|crawler/i.test(combinedText)) score += 8;
     if (item.id === 'alternance-availability' && /alternance|hire|contact|availab|contract|intern/i.test(combinedText)) score += 6;
     if (item.id === 'tech-stack-skills' && /tech|stack|skills|docker|figma|git|n8n|next/i.test(combinedText)) score += 6;
 
